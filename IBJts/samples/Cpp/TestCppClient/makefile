@@ -8,7 +8,7 @@ SHARD_LIBS=libTwsSocketClient.so
 TARGET=TestCppClient
 
 $(TARGET)Static:
-	$(CXX) $(CXXFLAGS) $(INCLUDES) $(BASE_SRC_DIR)/*.cpp ./*.cpp $(BASE_SRC_DIR)/lib/libbid.a -o$(TARGET)Static
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(BASE_SRC_DIR)/*.cpp ./*.cpp $(BASE_SRC_DIR)/lib/libbidgcc000.a -o$(TARGET)Static
 
 $(TARGET):
 	$(CXX) $(CXXFLAGS) $(INCLUDES) ./*.cpp $(BASE_SRC_DIR)/lib/libbid.so $(SHARED_LIB_DIRS)/$(SHARD_LIBS) -o$(TARGET)
